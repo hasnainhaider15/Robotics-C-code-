@@ -5,7 +5,8 @@ using namespace std;
 main()
 {
 	char choice;
-	cout<<"Select Your Choice: "<<" ";
+	cout<<"Select Your Choice: "<<" "<<endl;
+	cout<<"............CGPA or SGPA..........."<<" "
 	cin>>choice;
 	if(choice == 'sgpa')
 	{
