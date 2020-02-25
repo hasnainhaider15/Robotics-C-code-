@@ -4,10 +4,24 @@ using namespace std;
 
 main()
 {
-	//float sgpa();
-	//sgpa();
-	float cgpa();
-	cgpa();
+	char choice;
+	cout<<"Select Your Choice: "<<" ";
+	cin>>choice;
+	if(choice == 'sgpa')
+	{
+		float sgpa();
+		sgpa();
+	}
+	else if(choice == 'cgpa')
+	{
+		float cgpa();
+		cgpa();
+	}
+	else
+	{
+		cout<<"Entered Wrong Choice";
+	}
+	
 }
 
 float sgpa()
@@ -63,16 +77,13 @@ float cgpa()
 		cout<<"Enter Total credit hours of that semester: "<<" ";
 		cin>>cp;
 		e[i] = gpa*cp;
-		
-		//c[i]=cp+cp;
 		d[i]=cp;
 		
 		
 	}
 	for(j = 1; j<=a;j++)
 	{
-		//cout<<e[j]<<" ";
-		//cout<<c[j]<<endl;
+	
 		pro = pro+e[j];
 		sum = sum +d[j];
 			
