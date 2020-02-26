@@ -4,25 +4,28 @@ using namespace std;
 
 main()
 {
-	char choice;
-	cout<<"Select Your Choice: "<<" "<<endl;
-	cout<<"............CGPA or SGPA..........."<<" "
+	int choice;
+	cout<<"\t\t\tSelect Your Choice: "<<" "<<endl<<endl;
+	cout<<"\t1. For Semester GPA"<<endl;
+	cout<<"\t2. For Cumulative GPA"<<endl<<endl;
 	cin>>choice;
-	if(choice == 'sgpa')
+	switch(choice)
 	{
-		float sgpa();
-		sgpa();
-	}
-	else if(choice == 'cgpa')
-	{
-		float cgpa();
-		cgpa();
-	}
-	else
-	{
-		cout<<"Entered Wrong Choice";
-	}
 	
+		case 1:
+			float sgpa();
+			sgpa();
+			break;
+	
+		case 2:
+			float cgpa();
+			cgpa();
+			break;
+		default:
+			cout<<"Entered Wrong Choice";
+	
+	
+}
 }
 
 float sgpa()
