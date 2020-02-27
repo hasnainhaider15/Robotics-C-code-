@@ -4,8 +4,8 @@ using namespace std;
 
 struct student
 {
-	string name[10];
-	char fee_st;
+	string name;
+	string fee_st;
 	float gpa;
 	int roll_no;
 };
@@ -13,9 +13,40 @@ struct student
 main()
 {
 	struct student s1,s2,s3;
-	s1.name[10] = "Hasnain Haider";
-	s1.fee_st = 'y';
-	s1.gpa = 3.5;
-	s1.roll_no = 25;
-	cout<<s1.name;
+	
+	cout<<"Enter Your name:"<<" ";
+	cin>>s1.name;
+	
+	cout<<"Enter your Fee status: "<<" ";
+	cin>>s1.fee_st;
+	
+	cout<<"Enter your GPA: "<<" ";;
+	cin>>s1.gpa;
+	
+	cout<<"Enter your roll number:"<<" ";
+	cin>>s1.roll_no;
+	
+
 }
+
+
+
+/*string namefun()
+{
+	student s1;
+	string namefunc, arr[5];
+	int i;
+	for(i = 0; i<1; i++)
+	{
+		cout<<"Enter your name: "<<" ";
+		cin>>s1.name;
+		arr[i] = s1.name; 
+		
+		
+	}
+	for(i = 0; i<3; i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+	
+}*/
