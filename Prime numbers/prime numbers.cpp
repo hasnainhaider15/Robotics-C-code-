@@ -4,17 +4,33 @@ using namespace std;
 
 main()
 {
-	int a=2, b=3,c=5,d=7;
-	int i,input1,input2,arr[10];
-	cout<<"Enter first number: "<<" ";
-	cin>>input1;
+	int a, b, c, d;
+
+	cout<<"Enter two numbers number: "<<" ";
+	cin>>a>>b;
+	
+	if(a>b)
+	{
+		c = a;
+		a = b;
+		b = c;
+	}
 
 	//cout<<"Enter seconf number: "<<" ";
 	//cin>>input2;
 	
-	if(input1%a==0 && input1%b==0 && input1%c==0 && input1%d==0)
+	cout<<"Prime numbers between"<<a<<" and " <<b<<" are: "<<endl;
+	for(int i =1; i<=b; i++)
 	{
-		cout<<"Not prime";
+		d=0;
+		for(int j=1; j<=i; j++)
+		{
+			if(i%j == 0)
+			d++;
+			
+		}
+		if(d == 2)  //Ya to apny number sy divisible hoga ya to 1 sy divisible hoga
+		cout<<i<<" ";
 	}
 	
 }
