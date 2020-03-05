@@ -8,7 +8,8 @@ main()
 	cout<<endl<<"---------------------------Temp Calculator--------------------------------\n\n\n";
 	cout<<"   Chose your option: "<<endl<<endl;
 	cout<<"     1. Celsius to Farhenheit"<<endl;
-	cout<<"     2. Farhenheit to Celsius"<<endl;
+	cout<<"     2. Farhenheit to Celsius"<<endl<<endl;
+	cout<<"     Enter Your Choice: ";
 	cin>>choice;
 	
 	switch(choice)
